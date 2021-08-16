@@ -9,7 +9,21 @@
 }
 
 body {
-	background-color: #f7f7f7;
+	background-image: linear-gradient(
+		to right top,
+		#008e9b,
+		#1d818c,
+		#28747d,
+		#2e676e,
+		#315b60,
+		#2d575f,
+		#2a525d,
+		#284e5b,
+		#254f66,
+		#2c4f70,
+		#3c4d77,
+		#51497a
+	);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -27,26 +41,40 @@ body {
 h1 {
 	letter-spacing: 1px;
 	margin: 0;
+	color: #95b0b4;
+}
+
+h2 {
+	color: #95b0b4;
 }
 
 h3 {
 	border-bottom: 1px solid #bbb;
 	padding-bottom: 10px;
 	margin: 40px 0 10px;
+	color: #95b0b4;
 }
 
 h4 {
 	margin: 0;
 	text-transform: uppercase;
+	color: #95b0b4;
 }
 
 .inc-exp-container {
-	background-color: #fff;
+	background-color: #002c38;
 	box-shadow: var(--box-shadow);
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
 	margin: 20px 0;
+	border-radius: 10px;
+	transition-duration: 0.4s;
+}
+
+.inc-exp-container:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .inc-exp-container > div {
@@ -79,25 +107,34 @@ label {
 
 input[type="text"],
 input[type="number"] {
-	border: 1px solid #dedede;
-	border-radius: 2px;
+	border: 1px solid #344e74;
+	border-radius: 5px;
 	display: block;
 	font-size: 16px;
 	padding: 10px;
 	width: 100%;
+	background-color: #0a2c38;
+	color: #95b0b4;
 }
 
 .btn {
 	cursor: pointer;
-	background-color: #9c88ff;
+	background-color: #95b0b4;
 	box-shadow: var(--box-shadow);
-	color: #fff;
-	border: 0;
+	color: #0a2c38;
+	border: 1px solid;
+	border-radius: 5px;
 	display: block;
 	font-size: 16px;
 	margin: 10px 0 30px;
 	padding: 10px;
 	width: 100%;
+	transition-duration: 0.4s;
+}
+
+.btn:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn:focus,
@@ -112,9 +149,9 @@ input[type="number"] {
 }
 
 .list li {
-	background-color: #fff;
+	background-color: #0a2c38;
 	box-shadow: var(--box-shadow);
-	color: #333;
+	color: #95b0b4;
 	display: flex;
 	justify-content: space-between;
 	position: relative;
