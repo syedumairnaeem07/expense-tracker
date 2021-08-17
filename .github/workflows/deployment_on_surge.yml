@@ -29,5 +29,8 @@ jobs:
     - name: Install surge
       run: npm install --global surge
       
+    - name: Build
+      run: npm run build
+
     - name: Run Surge for deployment
       run: surge ./build expenseTracker07.surge.sh --token ${{secrets.SURGE_TOKEN}}
