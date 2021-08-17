@@ -25,13 +25,6 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
         node-version:  12
-    
-#     - uses: borales/actions-yarn@v2.0.0
-#       with:
-#           cmd: install #install yarn
-          
-    - name: Build Yarn
-      run: npm run build
       
     - name: Install surge
       run: npm install --global surge
